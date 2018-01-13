@@ -2,17 +2,12 @@
 
 <body>
     <p id="display"></p>
-    <script type="text/javascript">
-//getting the address passed thru and saving it in address var 
-    var address = getUrlVars()["address"];
-    document.getElementById("display").innerHTML = address;
-    function getUrlVars() {
-var vars = {};
-var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-vars[key] = value;
-});
-return vars;
-    }
+ <script>
+     
+     
+     document.getElementById("display").innerHTML = address;
+
+
     
   var rprAvmWidgetOptions =
   {
