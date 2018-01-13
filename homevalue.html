@@ -4,20 +4,19 @@
     <p id="display"></p>
  <script>
      
+      document.getElementById("display").innerHTML = getCookie("address");
      
-     document.getElementById("display").innerHTML = address;
+     function getCookie(name)
+  {
+    var re = new RegExp(name + "=([^;]+)");
+    var value = re.exec(document.cookie);
+    return (value != null) ? unescape(value[1]) : null;
+  }
+     
 
 
     
-  var rprAvmWidgetOptions =
-  {
-    Token : "D5E51F3D-BEF5-4F86-8FB7-75F5FA10E97A",
-    Query : address,
-    CoBrandCode : "btspathway",
-    ShowRprLinks : true
-  }
-</script>
-<script type="text/javascript" src="//www.narrpr.com/widgets/avm-widget/widget.ashx/script"></script>
+  
 
     
     
