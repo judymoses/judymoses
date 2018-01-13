@@ -1,5 +1,5 @@
 <html>
-<form method="post"  onsubmit="return storeValues(this);">
+<form method="post"  action="/homevalue" onsubmit="return storeValues(this);">
     <input type="text" name="address"/>
     <input type="submit" value="Find Value"/>
     </form>
@@ -24,7 +24,6 @@
   {
     setCookie("address", form.address.value);
     return true;
-      windows.location = "google.com";
   }      
         
     
