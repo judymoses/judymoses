@@ -1,7 +1,16 @@
 <html>
 <form action="homevalue.html" method="GET">
     <input type="text" name="address"/>
-    <input type="submit" value="Find Value"/>
+    <input type="button" value="Find Value" onClick=rprAVMWidgetOptions()/>
     </form>
-
+<script>
+     var rprAvmWidgetOptions =
+  {
+    Token : "D5E51F3D-BEF5-4F86-8FB7-75F5FA10E97A",
+    Query : address,
+    CoBrandCode : "btspathway",
+    ShowRprLinks : true
+  }
+</script>
+<script type="text/javascript" src="//www.narrpr.com/widgets/avm-widget/widget.ashx/script"></script>
 </html>
