@@ -1,19 +1,8 @@
 <html>
 
 <body>
-    
     <script type="text/javascript">
-  var rprAvmWidgetOptions =
-  {
-    Token : "D5E51F3D-BEF5-4F86-8FB7-75F5FA10E97A",
-    Query : "150 Woodland Rd, Chestnut Hill, MA 02467",
-    CoBrandCode : "btspathway",
-    ShowRprLinks : true
-  }
-</script>
-<script type="text/javascript" src="//www.narrpr.com/widgets/avm-widget/widget.ashx/script"></script>
-    
-    <script>
+//getting the address passed thru and saving it in address var 
     var address = getUrlVars()["address"];
     document.getElementById("display").innerHTML = address;
     function getUrlVars() {
@@ -23,7 +12,18 @@ vars[key] = value;
 });
 return vars;
     }
-    </script>
+    
+        //displaying the widget 
+  var rprAvmWidgetOptions =
+  {
+    Token : "D5E51F3D-BEF5-4F86-8FB7-75F5FA10E97A",
+    Query : address,
+    CoBrandCode : "btspathway",
+    ShowRprLinks : true
+  }
+</script>
+<script type="text/javascript" src="//www.narrpr.com/widgets/avm-widget/widget.ashx/script"></script>
+
     
     
  
