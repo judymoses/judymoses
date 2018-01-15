@@ -5,16 +5,52 @@
 }
 
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 3px 10px;
-    text-align: center;
-    font-weight: 200;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-}
+   border: 1px solid #0a3c59;
+   background: #e73e3e;
+   background: -webkit-gradient(linear, left top, left bottom, from(#e73e3e), to(#e73e3e));
+   background: -webkit-linear-gradient(top, #e73e3e, #e73e3e);
+   background: -moz-linear-gradient(top, #e73e3e, #e73e3e);
+   background: -ms-linear-gradient(top, #e73e3e, #e73e3e);
+   background: -o-linear-gradient(top, #e73e3e, #e73e3e);
+   background-image: -ms-linear-gradient(top, #e73e3e 0%, #e73e3e 100%);
+   padding: 10.5px 21px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #fcfcfc;
+   font-size: 14px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #ed5151;
+   background: -webkit-gradient(linear, left top, left bottom, from(#e85656), to(#ed5151));
+   background: -webkit-linear-gradient(top, #e85656, #ed5151);
+   background: -moz-linear-gradient(top, #e85656, #ed5151);
+   background: -ms-linear-gradient(top, #e85656, #ed5151);
+   background: -o-linear-gradient(top, #e85656, #ed5151);
+   background-image: -ms-linear-gradient(top, #e85656 0%, #ed5151 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #e73e3e;
+   background: -webkit-gradient(linear, left top, left bottom, from(#e73e3e), to(#ed5151));
+   background: -webkit-linear-gradient(top, #e73e3e, #e73e3e);
+   background: -moz-linear-gradient(top, #e73e3e, #e73e3e);
+   background: -ms-linear-gradient(top, #e73e3e, #e73e3e);
+   background: -o-linear-gradient(top, #e73e3e, #e73e3e);
+   background-image: -ms-linear-gradient(top, #e73e3e 0%, #e73e3e 100%);
+   color: #fff;
+   }
 div.form
 {
     display: block;
@@ -30,4 +66,5 @@ form
 
 input[type=text] {
    width: 300px;
+    height: 33 px;
 }
