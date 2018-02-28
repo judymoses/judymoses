@@ -1,12 +1,12 @@
 <html>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+    
+    </head>
 <body>
-			<script type="text/javascript" src="//www.narrpr.com/widgets/avm-widget/widget.ashx/script">
-</script>
-            <br>
-            <script>
+    <input class ="button" type="button" onclick="location.href='/';" value="Go Back" />
+ <script>
     
      function getCookie(name)
   {
@@ -24,9 +24,6 @@ window.onload = function(){
 function showText(){
   document.getElementById("delayedText").style.visibility = "visible";
 }
-
-
-
   var rprAvmWidgetOptions =
   {
     Token : "D5E51F3D-BEF5-4F86-8FB7-75F5FA10E97A",
@@ -34,22 +31,15 @@ function showText(){
     CoBrandCode : "btspathway",
     ShowRprLinks : true
   }
-  console.log(getCookie("address"));
 </script>
-            <div id=delayedText style="visibility: hidden; font-size: 12">
-                <span class="contact100-form-title">
-                    Seeing a blank page? You have entered an invalid address, please go back and try again. The address should be in this form: 150 Woodland Rd, Chestnut Hill, MA 02467
-                </span>
-            </div>
-            
-            
-    </div>
-    </div>
- 
+<script type="text/javascript" src="//www.narrpr.com/widgets/avm-widget/widget.ashx/script">
+</script>
+
+    <div id="delayedText" style="visibility:hidden">
 
 
-   
+    <p class="header">Seeing a blank page? You have entered an invalid address, please go back and try again.</p>
+    <p class="header"> The address should be in this form: 150 Woodland Rd, Chestnut Hill, MA 02467</p>
+ </div>
 </body>
-    
-    
 </html>
